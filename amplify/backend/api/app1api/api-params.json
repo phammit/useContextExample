@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/graphql",
+            "lambdaFunction": "app1lambdafunction",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/graphql"
+        }
+    ],
+    "resourceName": "app1api",
+    "apiName": "app1api",
+    "functionArns": [
+        {
+            "lambdaFunction": "app1lambdafunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-app1-dev-43221-authRole",
+        "unAuthRoleName": "amplify-app1-dev-43221-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "app1lambdafunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
