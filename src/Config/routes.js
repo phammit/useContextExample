@@ -8,19 +8,23 @@ import PageNotFound from '../Pages/NotFound';
 const routes =[
   {
     path:'/dashboard',
-    component: Dashboard
+    component: Dashboard,
+    isPrivate: true
   },
   {
     path:'/notfound',
-    component: PageNotFound
+    component: PageNotFound,
+    isPrivate: true
   },
   {
     path:'/',
-    component: Login
+    component: Login,
+    isPrivate: false
   },
   {
     path:'/*',
-    component: PageNotFound
+    component: PageNotFound,
+    isPrivate: true
   },
 ]
  
